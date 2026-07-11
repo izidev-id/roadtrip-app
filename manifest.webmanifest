@@ -1,0 +1,19 @@
+{
+  "name": "RoadTrip 2026",
+  "short_name": "RoadTrip",
+  "description": "Itinéraire jour par jour du road trip 2026.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#153c39",
+  "theme_color": "#153c39",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

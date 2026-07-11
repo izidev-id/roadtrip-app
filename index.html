@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153c39">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="RoadTrip 2026">
+  <title>RoadTrip 2026</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app" aria-live="polite">
+    <section class="hero" id="hero">
+      <div class="hero__shade"></div>
+      <header class="topbar">
+        <p class="eyebrow">RoadTrip 2026</p>
+        <div class="counter" id="counter">1 / 30</div>
+      </header>
+
+      <div class="content">
+        <article class="day-card" id="dayCard">
+          <div class="day-card__header">
+            <div>
+              <p class="date" id="date"></p>
+              <h2 id="route"></h2>
+              <p class="department" id="department"></p>
+            </div>
+            <span class="badge" id="night"></span>
+          </div>
+
+          <div class="stats" aria-label="Informations trajet">
+            <div>
+              <span>Kilomètres</span>
+              <strong id="kms"></strong>
+            </div>
+            <div>
+              <span>Temps</span>
+              <strong id="duration"></strong>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>Lieu de nuit</h3>
+            <p id="sleep"></p>
+          </div>
+
+          <div class="section">
+            <h3>À faire</h3>
+            <ul id="todo"></ul>
+          </div>
+        </article>
+
+        <div class="nav-row">
+          <button class="nav-btn" id="prevBtn" aria-label="Jour précédent">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <button class="nav-btn" id="nextBtn" aria-label="Jour suivant">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+      </div>
+
+      <footer class="timeline-wrap">
+        <div class="timeline" id="timeline" aria-label="Choisir une journée"></div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
